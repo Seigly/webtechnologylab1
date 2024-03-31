@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formcss.css">
+    <title>Student registration form</title>
+</head>
+<style>
+    @media screen and (max-width: 240px) {
+    div {
+        float: left;
+        background: red;
+    }
+}
+</style>
+<body>
+    <form action="/tacos">
+        <fieldset>
+            <legend>FILL IN</legend>
+        <div>
+        <label for="name">enter your name:</label>
+        <input type="text" id="name" required>
+        </div>
+        <div>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd">
+        </div>
+        <div>
+        <label for="age">enter your Age:</label>
+        <input type="text" id="age" required>
+        </div>
+        <div>
+        <label>Select the city:</label>
+        <input type="radio" id="pudu" name="cities" value="puducherry">
+        <label for="pudu">Puducherry</label>
+        <input type="radio" id="Yanam" name="cities" value="yanam">
+        <label for="yanam">Yanam</label>
+        </div>
+        <div>
+            <label for="gen">choose gender:   </label>
+            <label for="female">female</label>
+            <input type="checkbox" id="female" name="gender">
+            <label for="male">male</label>
+            <input type="checkbox" id="male" name="gender">
+        </div>
+        
+        
+        </fieldset>
+        <input type="submit" value="Submit" class="right">
+
+
+    </form>
+</body>
+</html>
